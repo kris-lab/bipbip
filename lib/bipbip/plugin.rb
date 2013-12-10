@@ -43,7 +43,7 @@ module Bipbip
     end
 
     def name
-      self.class.name.split('::').last
+      self.class.name.split('::').last.downcase
     end
 
     def metric_identifier(server)
