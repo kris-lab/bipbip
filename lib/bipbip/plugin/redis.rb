@@ -35,6 +35,10 @@ module Bipbip
       data = {}
       
       metrics_names.each do |key|
+
+        puts roundings[key].nil?
+        puts !roundings[key].nil?
+
         if !roundings[key].nil?
           data[key] = stats[key].to_f.round(roundings[key])
         else
